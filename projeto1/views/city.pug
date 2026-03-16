@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    style.
+      body { background: #1a1a1a; color: #ff0000; font-family: sans-serif; }
+      .alert { border: 2px solid red; padding: 20px; }
+  body
+    h1 UMBRELLA CORP - MONITORAMENTO
+    div.alert
+      h2 Cidade: Raccoon City
+      p Status Atual: #{status}
+      p Agente Viral: #{virus}
+    
+    hr
+    nav
+      ul
+        li: a(href="/raccoon/police", style="color: white") Ir para a Delegacia (RPD)
+        li: a(href="/raccoon/lab", style="color: white") Ir para o Laboratório NEST

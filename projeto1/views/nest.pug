@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title UMBRELLA - NEST LABS
+    style.
+      body { background: #1a0000; color: #ff4d4d; font-family: 'Segoe UI', sans-serif; text-align: center; }
+      .danger-zone { border: 4px double #ff0000; display: inline-block; padding: 30px; margin-top: 50px; }
+      .blink { animation: blinker 1s linear infinite; }
+      @keyframes blinker { 50% { opacity: 0; } }
+  body
+    div.danger-zone
+      h1 ⚠️ ACESSO RESTRITO: #{location}
+      h2.blink ALERTA: #{alert}
+      p VAZAMENTO DE T-VIRUS DETECTADO NO NÍVEL B4.
+      p INICIANDO PROTOCOLO DE ESTERILIZAÇÃO TÉRMICA.
+    
+    br
+    br
+    a(href="/raccoon", style="color: white") << TENTAR EVACUAÇÃO (VOLTAR)

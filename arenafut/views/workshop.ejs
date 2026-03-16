@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OFICINA DE BEYS</title>
+    <style>
+        body { 
+            background: #121212; 
+            color: #e0e0e0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            padding: 40px; 
+        }
+        .part-card { 
+            border: 2px solid #555; 
+            background: #1e1e1e;
+            padding: 20px; 
+            border-radius: 10px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        .stat { color: #00d4ff; font-weight: bold; }
+        h1 { color: #ffcc00; border-bottom: 2px solid #ffcc00; display: inline-block; }
+        .back-btn { display: inline-block; margin-top: 20px; color: #ff4136; text-decoration: none; border: 1px solid #ff4136; padding: 5px 10px; border-radius: 5px; }
+        .back-btn:hover { background: #ff4136; color: white; }
+    </style>
+</head>
+<body>
+    <h1>🛠️ Oficina de Ajustes</h1>
+    <p>Personalize seu Bey para a próxima batalha na Arena.</p>
+
+    <div class="part-card">
+        <h3>Peça Selecionada:</h3>
+        <p><strong>Nome:</strong> <%= peca %></p>
+        <p><strong>Bônus:</strong> <span class="stat"><%= efeito %></span></p>
+    </div>
+
+    <br>
+    <div style="color: #888; font-style: italic;">
+        <p>* Pontos de customização restantes: 150</p>
+    </div>
+
+    <a href="/arena" class="back-btn"><< Voltar para o Estádio</a>
+</body>
+</html>

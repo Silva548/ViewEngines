@@ -1,5 +1,16 @@
+// views/index.pug
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .alert-box
+    h1= title
+    p.status STATUS: #{status}
+  
+  .content-grid
+    .card
+      h2 R.P.D. Report
+      p Incidente nas Montanhas Arklay confirmado. Equipe S.T.A.R.S. enviada.
+    .card
+      h2 T-Virus Data
+      p Pesquisa em estágio avançado no laboratório NEST.
+

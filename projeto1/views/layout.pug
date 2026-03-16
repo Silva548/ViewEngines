@@ -1,7 +1,21 @@
+// views/layout.pug
 doctype html
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com")
   body
-    block content
+    nav.navbar
+      .logo UMBRELLA CORP
+      ul
+        li: a(href="/") Home
+        li: a(href="/sobre") Arquivos
+        li: a(href="/users") Staff (Biohazard)
+    
+    .container
+      block content
+    
+    footer
+      p &copy; 1998 Umbrella Corporation - "Our Business is Life Itself"
+

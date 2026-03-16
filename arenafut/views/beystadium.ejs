@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BEYSTADIUM - ARENA CENTRAL</title>
+    <style>
+        body { background: #001f3f; color: #fff; font-family: 'Impact', sans-serif; text-align: center; }
+        .stadium { border: 10px solid #ff851b; border-radius: 50%; width: 400px; height: 400px; margin: 20px auto; padding: 50px; background: radial-gradient(circle, #0074D9, #001f3f); }
+        .vs { font-size: 2em; color: #ff4136; }
+    </style>
+</head>
+<body>
+    <h1>🏟️ <%= torneio %></h1>
+    <div class="stadium">
+        <h2>STATUS: <%= status %></h2>
+        <div class="vs">
+            <p><%= proximaLuta %></p>
+        </div>
+        <p>LET IT RIP!</p>
+    </div>
+    <nav>
+        <a href="/arena/launch" style="color: yellow">Ir para Lançamento</a> | 
+        <a href="/arena/parts" style="color: yellow">Trocar Peças</a>
+    </nav>
+</body>
+</html>

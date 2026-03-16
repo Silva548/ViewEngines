@@ -1,8 +1,35 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: #00ff00; /* Verde terminal */
+  font-family: 'Courier New', Courier, monospace;
 }
 
-a {
-  color: #00B7FF;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #1a1a1a;
+  border-bottom: 2px solid #ff0000; /* Linha de perigo */
 }
+
+.navbar a { color: #fff; text-decoration: none; padding: 0 10px; }
+.navbar a:hover { color: #ff0000; }
+
+.alert-box {
+  border: 1px solid #ff0000;
+  padding: 20px;
+  margin: 20px 0;
+  background: rgba(255, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #333;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.status { color: #ff0000; font-weight: bold; animation: blink 1s infinite; }
+@keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }
+
